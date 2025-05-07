@@ -6,15 +6,21 @@ Dupla: Leticia Helena do Rosário Furlan e Roberto da Silva Espindola.
 
 ## Lista 2: Modelagem de classes e uso de dependências
 
-- [ ] Etapa 1;
-- [ ] Etapa 2;
+- [X] Etapa 1;
+- [X] Etapa 2;
 - [ ] Etapa 3;
 - [ ] Etapa 4.
 
 ### Etapa 1
 
+
+
 ### Etapa 2
 
+
+
 ### Etapa 3
+
+
 
 ### Etapa 4
