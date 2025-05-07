@@ -20,6 +20,10 @@ public class App {
     // Main
     public static void main(String[] args){
         App app = new App();
+
+        Grade grade = new Grade(100,100);
+        grade.desenhar(app.draw);
+
         app.draw.show();
     }
 }
