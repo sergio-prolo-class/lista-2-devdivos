@@ -43,4 +43,12 @@ public class Grade {
 
     }
 
+    // getter gerado para poder ser consultado na classe Navio
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 }

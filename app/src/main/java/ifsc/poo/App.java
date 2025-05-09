@@ -24,6 +24,7 @@ public class App {
         Grade grade = new Grade(100,100);
         grade.desenhar(app.draw);
 
+
         app.draw.show();
     }
 }
