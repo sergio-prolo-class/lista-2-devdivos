@@ -14,6 +14,7 @@ public class Grade {
     public void desenhar (Draw draw) {
 
         // dois for para desenhar a grade de 10x10
+        draw.setPenColor(Draw.BLACK); // cor da grade
         for (int i = 0; i <= 10; i++) {
             int yLinha = x + i * tamanhoCelula;
             draw.line(x, yLinha, x+10 *tamanhoCelula, yLinha);
@@ -51,4 +52,10 @@ public class Grade {
     public int getY() {
         return y;
     }
+
+    public int getTamanhoCelula() {
+        return tamanhoCelula;
+    }
+
+    
 }

@@ -12,34 +12,45 @@ public class Navio {
     private boolean vertical;
     Color corNavio = Color.RED;
 
-    public Navio(Grade grade, int tamanhoNavio) {
+    //Construtor
+    public Navio(Grade grade, int linha, int coluna, int tamanhoNavio, boolean vertical, Color corNavio) {
         this.grade = grade;
+        this.linha = linha;
+        this.coluna = coluna;
         this.tamanhoNavio = tamanhoNavio;
+        this.vertical = vertical;
+        this.corNavio = corNavio;
     }
 
-    //A classe Navio deve ter um método público chamado desenhar que recebe um objeto Draw como
-    //argumento.
+    // Métdo desenhar utilizando draw para desenhar o navio 
+    public void desenhar(Draw draw) {
+        int inicioX = grade.getX();
+        int inicioY = grade.getY();
+        int tamanhoCelula = grade.getTamanhoCelula();
 
-    //O método desenhar deve usar o objeto Draw para desenhar um navio na tela.
-    public void desenhar (Draw draw){
-           int inicioX = grade.getX();
-           int inicioY = grade.getY();
+        // Desenhando o navio na grade levando em conta a orientação solicitada no app
+        for (int i = 0; i < tamanhoNavio; i++) {
+            int linhaAtual;
+            int colunaAtual;
 
+            //relação da lógica de posição do navio com a grade
+            if(vertical){
+                linhaAtual = linha;
+                colunaAtual = coluna + i;
+            } else {
+                linhaAtual = linha + i;
+                colunaAtual = coluna;
+            }
 
-        for (int i = 0; i < tamanhoNavio; tamanhoNavio++){
-            draw.filledSquare(grade.getX(), grade.getY(), 40/2.0);
+            //lógica para desenhar o navio
+            int x = inicioX + tamanhoCelula * linhaAtual; 
+            int y = inicioY + tamanhoCelula *  colunaAtual;
+            double xCentro = x + tamanhoCelula / 2.0; 
+            double yCentro = y + tamanhoCelula / 2.0;
             draw.setPenColor(corNavio);
-
+            draw.filledSquare(xCentro, yCentro, tamanhoCelula/2.0);
         }
 
     }
 
-    //O objeto Navio deve ser construído com argumentos para definir à qual Grade ele pertence, seu
-    //tamanho, posição (x, y) na grade e orientação (vertical ou horizontal) (Por exemplos, o Navio da
-    //Figura 2 possui tamanho 5, posição (3, 2) e orientação vertical)
-
-
-    //O Navio deve ser desenhado como uma série de quadrados coloridos. A dimensão dos quadrados é
-    //igual ao tamanho da célula da Grade (40 × 40 pixels). A cor dos quadrados deve ser a mesma dos
-    //rótulos da Grade.
 }
