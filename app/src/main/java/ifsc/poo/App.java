@@ -23,7 +23,9 @@ public class App {
     public static void main(String[] args){
         App app = new App();
 
-        Grade grade = new Grade(100,100);
+        Grade grade = new Grade(50,100);
+        Grade gradeVazio = new Grade(550,100);
+
         //Definição de navio posicionado seguindo o exemplo do enunciado
         //Coordenada A0
         Navio navioA0 = new Navio(grade, 0, 0, 4, false, Color.RED);
@@ -45,7 +47,9 @@ public class App {
 
         //Desenhando a grade
         grade.desenhar(app.draw);
+        gradeVazio.desenhar(app.draw);
 
+        //Mostrndo na interface gráfica
         app.draw.show();
     }
 }
