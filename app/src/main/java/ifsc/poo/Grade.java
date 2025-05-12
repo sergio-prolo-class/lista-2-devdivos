@@ -57,5 +57,5 @@ public class Grade {
         return tamanhoCelula;
     }
 
-    
+
 }
