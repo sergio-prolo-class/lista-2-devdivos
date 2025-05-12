@@ -25,10 +25,27 @@ public class App {
 
         Grade grade = new Grade(100,100);
         //Definição de navio posicionado seguindo o exemplo do enunciado
-        Navio navio = new Navio(grade, 3, 2, 5, true, Color.RED);
-        navio.desenhar(app.draw);
+        //Coordenada A0
+        Navio navioA0 = new Navio(grade, 0, 0, 4, false, Color.RED);
+        //Coordenada B5
+        Navio navioB5 = new Navio(grade, 5, 1, 3, true, Color.RED);
+        //Coordenada C3
+        Navio navioC3 = new Navio(grade, 3, 2, 5, true, Color.RED);
+        //Coordenada F7
+        Navio navioF7 = new Navio(grade, 7, 5, 3, true, Color.RED);
+        //Coordenada I1
+        Navio navioI1 = new Navio(grade, 1, 8, 2, false, Color.RED);
+
+        //Desenhando os navios
+        navioA0.desenhar(app.draw);
+        navioB5.desenhar(app.draw);
+        navioC3.desenhar(app.draw);
+        navioF7.desenhar(app.draw);
+        navioI1.desenhar(app.draw);
+
+        //Desenhando a grade
         grade.desenhar(app.draw);
-        
+
         app.draw.show();
     }
 }
