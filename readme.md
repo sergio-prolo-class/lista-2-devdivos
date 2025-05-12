@@ -32,9 +32,9 @@ Resultado da terceira etapa:
 
 ![etapa3.png](/imagens/etapa3.png)
 
-Grade com navio de tamanho 5 na posição (3,2)
+Grade com navio de tamanho 5 na posição (3,2) na vertical.
 ### Etapa 4
 
 ![etapa4](/imagens/etapa4.png)
 
-Duas grades desenhadas, a da direita com os cinco navios posicionados conforme o PDF.
+Duas grades desenhadas, a da esquerda com os cinco navios posicionados conforme o PDF.
