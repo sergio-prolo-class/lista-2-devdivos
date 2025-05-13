@@ -28,15 +28,15 @@ public class App {
 
         //Definição de navio posicionado seguindo o exemplo do enunciado
         //Coordenada A0
-        Navio navioA0 = new Navio(grade, 0, 0, 4, false, Color.RED);
+        Navio navioA0 = new Navio(grade, 0, 0, 4, false);
         //Coordenada B5
-        Navio navioB5 = new Navio(grade, 5, 1, 3, true, Color.RED);
+        Navio navioB5 = new Navio(grade, 5, 1, 3, true);
         //Coordenada C3
-        Navio navioC3 = new Navio(grade, 3, 2, 5, true, Color.RED);
+        Navio navioC3 = new Navio(grade, 3, 2, 5, true);
         //Coordenada F7
-        Navio navioF7 = new Navio(grade, 7, 5, 3, true, Color.RED);
+        Navio navioF7 = new Navio(grade, 7, 5, 3, true);
         //Coordenada I1
-        Navio navioI1 = new Navio(grade, 1, 8, 2, false, Color.RED);
+        Navio navioI1 = new Navio(grade, 1, 8, 2, false);
 
         //Desenhando os navios
         navioA0.desenhar(app.draw);

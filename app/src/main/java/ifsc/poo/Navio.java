@@ -10,16 +10,13 @@ public class Navio {
     private int coluna;
     private int tamanhoNavio;
     private boolean vertical;
-    Color corNavio = Color.RED;
-
     //Construtor
-    public Navio(Grade grade, int linha, int coluna, int tamanhoNavio, boolean vertical, Color corNavio) {
+    public Navio(Grade grade, int linha, int coluna, int tamanhoNavio, boolean vertical) {
         this.grade = grade;
         this.linha = linha;
         this.coluna = coluna;
         this.tamanhoNavio = tamanhoNavio;
         this.vertical = vertical;
-        this.corNavio = corNavio;
     }
 
     // Métdo desenhar utilizando draw para desenhar o navio 
@@ -27,6 +24,7 @@ public class Navio {
         int inicioX = grade.getX();
         int inicioY = grade.getY();
         int tamanhoCelula = grade.getTamanhoCelula();
+        Color corNavio = new Color(128,0,0);
 
         // Desenhando o navio na grade levando em conta a orientação solicitada no app
         for (int i = 0; i < tamanhoNavio; i++) {
